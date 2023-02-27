@@ -1,7 +1,10 @@
 import json
 import simplekml
+import requests
 
 def main():
+    downloadLatestAuroraData()
+
     with open('ovation_aurora_latest.json') as f:
         data = json.load(f)
 
@@ -26,6 +29,11 @@ def main():
     kmlMax.newpoint(name=maxIntensity, coords=[(lonMax, latMax)])
     kmlMax.save('ovation_aurora_latest_max.kml')
     kml.save('ovation_aurora_latest.kml')
+
+def downloadLatestAuroraData():
+    url = 'https://services.swpc.noaa.gov/json/ovation_aurora_latest.json'
+    r = requests.get(url, allow_redirects=False)
+    open('ovation_aurora_latest.json', 'wb').write(r.content)
 
 if __name__ == '__main__':
     main()
