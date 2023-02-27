@@ -4,8 +4,8 @@ Aurora data to KML is a simple script that converts the data from the NOAA Auror
 ## Usage
 1. Download the script
 2. Run the script with the following command: `python aurora.py`
-3. The script will create a file called `ovation_aurora_latest.kml` and 'ovation_aurora_latest_max.kml' in the same directory as the script.
-4. Open the file in Google Earth. 
+3. The script will create a file called `ovation_aurora_latest.kml` and `ovation_aurora_latest_max.kml` in the same directory as the script.
+4. Open one of the KML files in Google Earth. 
 
 ## Description
 The script will download the latest data from the NOAA Aurora Forecast website and convert it to a KML file that can be used in Google Earth. The name of the KML points will be the intensity of the aurora.
