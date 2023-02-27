@@ -1,3 +1,7 @@
+# Remove the .json and .kml with data
+*.json
+*.kml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
