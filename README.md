@@ -22,4 +22,4 @@ MIT License
 This script is not affiliated with the NOAA Aurora Forecast website or Google Earth. The script is provided as is and the author is not responsible for any damage caused by the script.
 
 ## Author
-* **Elias Sörstrand** - *Initial work*
+* **Elias Sörstrand** - [elisor1219](https://github.com/elisor1219)
